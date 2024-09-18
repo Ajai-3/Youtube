@@ -1,0 +1,15 @@
+* {
+    font-family: roboto;
+    margin: 0px;
+    /* background-color: rgb(113, 95, 95); */
+
+}
+ 
+body {
+    padding-top: 140px;
+    padding-left: 90px;
+}
+
+p {
+    margin: 0px;
+}

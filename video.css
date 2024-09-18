@@ -1,0 +1,121 @@
+ 
+
+/* video grid */
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 14px;
+    row-gap: 40px;
+    padding-right: 30px;
+}
+
+@media (max-width: 593px) {
+    .video-grid {
+        grid-template-columns: 1fr ; 
+    }
+}
+
+
+@media (min-width: 593px) and (max-width: 1080px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (min-width: 1080px) and (max-width: 1378px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+}
+
+
+/* video previews ******************/
+/* .video-preview {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 6px;
+    width: 345px;
+    background-color: rgb(11, 11, 11);
+
+} */
+
+/* thumbnails **/
+.thumbnails {
+    
+    width: 100%;
+    border-radius: 12px;
+}
+
+.thumbnails:hover {
+    border-radius: 0px;
+    transition: .5s;
+}
+
+/* thumbnail row */
+.thumbnail-row {
+    position: relative;
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+
+.video-time {
+    position: absolute; 
+    /* display: inline; */
+    bottom: 13px;
+    right: 10px;
+    padding: 2px 3px 2px 4px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+
+}
+
+/* video info div under the thumbnail */
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 36px 1fr 10px;
+    cursor: pointer;
+    /* column-gap: 10px; */
+}
+
+
+.profile-picture {
+    border-radius: 50%;
+    width: 100%;
+}
+
+/* video title **/
+.video-title {
+    font-size: 1.1rem;
+    margin: 0px 0px 4px 10px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #000000;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+/* video author & video stats**/
+.video-author,
+.video-stats  {
+    font-size: .88rem;
+    line-height: 20px;
+    margin-left: 10px;
+    color: rgb(113, 116, 116);
+}
+.fa {
+    font-size: .75rem;
+}
+
+.three-dot {
+  font-size: 1rem;
+  margin-top: 5px;
+}
